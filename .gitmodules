@@ -1,0 +1,9 @@
+[submodule "backend"]
+	path = backend
+	url = https://github.com/naptha101/scrapper_backend
+[submodule "Frontend/vi"]
+	path = Frontend/vi
+	url = https://github.com/naptha101/Scrapper_frontend
+[submodule "Frontend/vite-project"]
+	path = Frontend/vite-project
+	url = https://github.com/naptha101/Scrapper_frontend
