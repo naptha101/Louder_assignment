@@ -1,0 +1,67 @@
+Project Overview:
+
+This project is a web application that lists events happening in Sydney, Australia. It scrapes event data from event websites and displays them in a visually appealing manner. Users can sign up to store their email addresses for future reference. The app is built with React (Vite) for the frontend and Node.js (Express) for the backend.
+
+Features
+
+Scrapes and displays event data dynamically.
+
+Users can click "Get Tickets" and enter their email before being redirected.
+
+The scraper runs every 24 hours to update event listings.
+
+Uses MongoDB to store event data and user emails.
+
+Tech Stack
+
+Frontend: React (Vite), Tailwind CSS
+
+Backend: Node.js (Express), Puppeteer (for scraping)
+
+Database: MongoDB (Mongoose)
+
+Styling: Tailwind CSS
+
+Setup Instructions
+
+Prerequisites
+
+Node.js (v16 or later)
+
+MongoDB installed or an Atlas cluster
+
+1️⃣ Clone the Repository
+
+ git clone https://github.com/your-username/event-listing-app.git
+ cd event-listing-app
+
+2️⃣ Set Up Environment Variables
+
+Create a .env file in both frontend/ and backend/ directories with:
+
+# Backend .env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+
+# Frontend .env
+VITE_API_URL=http://localhost:5000
+
+3️⃣ Install Dependencies
+
+Run the following in both backend/ and frontend/ folders:
+
+npm install
+
+4️⃣ Run the Backend Server
+
+cd backend
+npm start
+
+5️⃣ Run the Frontend
+
+cd frontend
+npm run dev
+
+6️⃣ Access the App
+
+Visit http://localhost:5173 in your browser.
