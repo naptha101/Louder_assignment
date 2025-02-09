@@ -1,0 +1,39 @@
+Approach:
+
+Scraping Events: Used Puppeteer to fetch event details dynamically from an event listing website.
+
+Backend API: Built with Express to serve event data and handle email storage.
+
+Database Integration: Stored scraped event details and user emails in MongoDB for persistence.
+
+Frontend Development: Built a user-friendly UI with React + Tailwind CSS.
+
+Email Collection: Users enter their email before being redirected to ticket purchase pages.
+
+Scheduled Scraping: Used node-cron to run the scraper every 24 hours.
+
+Challenges Faced:
+
+Dynamic Content Loading: Event websites use JavaScript, requiring Puppeteer instead of Cheerio for scraping.
+
+Anti-Scraping Measures: Added User-Agent spoofing and delays to prevent detection.
+
+State Management: Handling modal toggles and user input efficiently.
+
+Responsive Design: Ensuring a consistent experience across devices.
+
+Performance Optimization: Minimized API calls and used caching where possible.
+
+Improvements & Future Work:
+
+Better Error Handling: Implementing retry mechanisms for failed scrapes.
+
+Filtering & Search: Allowing users to filter events by category, date, or location.
+
+Pagination: Implementing lazy loading for performance.
+
+Authentication: Enabling user accounts to save favorite events.
+
+Push Notifications: Allowing real-time updates for new events.
+
+This project successfully demonstrates web scraping, API development, and UI/UX improvements while tackling real-world challenges in dynamic content extraction and user experience design.
